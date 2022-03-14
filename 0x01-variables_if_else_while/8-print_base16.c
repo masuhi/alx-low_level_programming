@@ -18,6 +18,7 @@ int main(void)
 		puthchar(i);
 		i++;
 	}
+
 	l = 'a';
 	while ( l <= 'f')
 	{
