@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /* betty style doc for function main goes there */
 /**
  * main - Entry point
@@ -28,6 +27,5 @@ int main(void)
 		}
 	}
 		putchar('\n');
-		return (0);
-	
+		return (0);	
 }
