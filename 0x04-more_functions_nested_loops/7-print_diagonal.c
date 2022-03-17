@@ -29,5 +29,3 @@ void print_diagonal(int n)
 	{
 		_putchar('\n');
 	}
-}
-© 2022 GitHub, Inc.
