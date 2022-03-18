@@ -1,12 +1,14 @@
 #include "main.h"
+
 /**
  * print_square - draws a square
  * @size: length and width of square
  *
  * Return: void
  */
+
 void print_square(int size)
-{	
+{
 	int row;
 	int column;
 
@@ -25,3 +27,4 @@ void print_square(int size)
 	{
 		_putchar('\n');
 	}
+}
