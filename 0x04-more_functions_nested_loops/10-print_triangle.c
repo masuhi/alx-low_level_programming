@@ -1,14 +1,16 @@
 #include "main.h"
+
 /**
  * print_triangle - prints a triangle
  * @size: length of sides minus hypotenuse
  *
  * Return: void
  */
+
 void print_triangle(int size)
 {
 	int line = 0;
-	int spaces; 
+	int spaces;
 	int hashes;
 
 	if (size > 0)
@@ -19,8 +21,10 @@ void print_triangle(int size)
 			{
 				_putchar(' ');
 			}
-			for (hashes = 0; hashes < line +1; hashes++)
+			for (hashes = 0; hashes < line + 1; hashes++)
 			{
+				_putchar('#');
+			}
 			_putchar('\n');
 			line++;
 		}
@@ -30,4 +34,3 @@ void print_triangle(int size)
 		_putchar('\n');
 	}
 }
-
