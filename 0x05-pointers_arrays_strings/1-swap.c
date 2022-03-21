@@ -13,4 +13,4 @@ void swap_int(int *a, int *b)
 	*a = *b;
 	*b = c;
 }
-© 2022 GitHub, Inc
+
