@@ -28,4 +28,4 @@ char *_strcat(char *dest, char *src)
 
 	return (dest);
 }
-© 2022 GitHub, Inc.
+
