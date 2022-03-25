@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - chack the code
+ * main - check the code
  *
  * Return: Always 0.
  */
@@ -17,4 +17,4 @@ int main(void)
 	print_number(-98);
 	_putchar('\n');
 	return (0);
-}	
+}
