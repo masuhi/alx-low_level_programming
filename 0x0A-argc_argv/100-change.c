@@ -1,87 +1,44 @@
 #include <stdlib.h>
-
 /**
- *
- *  * main - print the min number of coins to make change for an amount of money
- *
- *   * @argc: arg count
- *
- *    * @argv: args passed as an array of strs
- *
- *     * Return: 1 if error, 0 otherwise
- *
- *      */
-
+ * main - print the min number of coins to make change for an amount of money
+ * @argc: arg count
+ * @argv: args passed as an array of strs
+ * Return: 1 if error, 0 otherwise
+ */
 int main(int argc, char *argv[])
-
 {
+	int total, count;
+	unsigned int i;
+	char *p;
+	int cents[] = {25, 10, 5, 2};
 
-		int total, count;
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
 
-			unsigned int i;
+	total = strtol(argv[1], &p, 10);
+	count = 0;
 
-				char *p;
+	if (!*p)
+	{
+		while (total > 1)
+			for (i = 0; i < sizeof(cents[i]); i++)
+				if (total >= cents[i])
+				{
+					count += total / cents[i];
+					total = total % cents[i];
+				}
+		if (total == 1)
+			count++;
+	}
+	else
+	{
+		printf("Error\n");
+		return (1);
+	}
 
-					int cents[] = {25, 10, 5, 2};
-
-
-
-						if (argc != 2)
-
-								{
-
-											printf("Error\n");
-
-													return (1);
-
-														}
-
-
-
-							total = strtol(argv[1], &p, 10);
-
-								count = 0;
-
-
-
-									if (!*p)
-
-											{
-
-														while (total > 1)
-
-																		for (i = 0; i < sizeof(cents[i]); i++)
-
-																							if (total >= cents[i])
-
-																												{
-
-																																		count += total / cents[i];
-
-																																							total = total % cents[i];
-
-																																											}
-
-																if (total == 1)
-
-																				count++;
-
-																	}
-
-										else
-
-												{
-
-															printf("Error\n");
-
-																	return (1);
-
-																		}
-
-
-
-											printf("%d\n", count);
-
-												return (0);
-
+	printf("%d\n", count);
+	return (0);
 }
