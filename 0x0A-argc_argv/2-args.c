@@ -1,31 +1,16 @@
 #include <stdio.h>
-
 /**
- *
- *  * main - prints all args it receives
- *
- *   * @argc: arg count
- *
- *    * @argv: args passed as an array of strs
- *
- *     * Return: 0
- *
- *      */
-
+ * main - prints all args it receives
+ * @argc: arg count
+ * @argv: args passed as an array of strs
+ * Return: 0
+ */
 int main(int argc, char *argv[])
-
 {
+	int i;
 
-		int i;
+	for (i = 0; i < argc; i++)
+		printf("%s\n", argv[i]);
 
-
-
-			for (i = 0; i < argc; i++)
-
-						printf("%s\n", argv[i]);
-
-
-
-				return (0);
-
+	return (0);
 }
