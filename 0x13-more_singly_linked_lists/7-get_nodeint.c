@@ -1,5 +1,3 @@
-									return (node);#include "lists.h"
-
 /**
  * get_nodeint_at_index - Gets the node at a given index
  * @head: The node at the beginning of the list
